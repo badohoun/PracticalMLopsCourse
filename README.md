@@ -1,1 +1,3 @@
 # PracticalMLopsCourse
+
+Il s'agit de voir ensemble les bonnes pratiques de développement qui vont à  coup sur propulser votre carrière en tant que datascientist ...
