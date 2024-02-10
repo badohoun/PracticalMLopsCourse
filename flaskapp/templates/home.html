@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Page</title>
+
+</head>
+
+<body>
+    <div>
+        <h2>Home Page for ML Apps</h2>
+
+    </div>
+    <div>
+        <form method="POST" action="/predict">
+            <input type="text" name="firstname" placeholder="FirstName">
+            <input type="text" name="lastname" placeholder="LastName">
+            <button type="reset">Clear</button>
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+    <div>
+        <p>Your name was {{firstname}} and your surname is {{lastname}}</p>
+    </div>
+
+
+
+
+</body>
+
+</html>
