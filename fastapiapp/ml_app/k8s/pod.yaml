@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-test 
+spec:
+  containers:
+  - name: pod-test 
+    image: espero20/onenode_test:tagname
+    resources:
+      requests:
+        memory: '128Mi'
+        cpu: "256m"
+      limits:
+        memory: "128Mi"
+        cpu: "256m"
+    ports:
+      - containerPort: 60 
