@@ -23,8 +23,8 @@ RUN pip3 install --no-cache-dir fastapi
 RUN pip3 install --no-cache-dir uvicorn 
 
 # On ouvre et expose le port 5000
-EXPOSE 5000
+EXPOSE 8000
 
 # Lancement de l'API
 # Attention : ne pas lancer en daemon ! (bloquant: faut jamais exécuter l'application en arrière plan , il faut laisser l'application en suspens)
-CMD ["uvicorn", "app:app", "-b", "0.0.0.0:5000", "-w" , "4"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
